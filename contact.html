@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasteo — Aloqa</title>
+    <link rel="stylesheet" href="CSS/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Tasteo<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="menu.html">Menyu</a></li>
+                <li><a href="about.html">Biz haqimizda</a></li>
+                <li><a href="contact.html" class="active">Aloqa</a></li>
+            </ul>
+        </nav>
+        <div class="menuIcon">
+            <span class="material-icons menu-icon" id="menuIcon">
+                menu
+            </span>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Biz bilan bog‘laning</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Ismingiz" required>
+                    <input type="email" placeholder="Email manzilingiz" required>
+                    <textarea rows="5" placeholder="Xabaringizni yozing..." required></textarea>
+                    <button type="submit" class="btn">Yuborish</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Bizning manzil</h3>
+                <p>📍 Samarqand sh., Registon ko‘chasi 24</p>
+                <p>📞 +998 90 123 45 67</p>
+                <p>⏰ Har kuni: 10:00 — 23:00</p>
+
+                <div class="social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/add.js">
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Xabaringiz yuborildi! Tez orada siz bilan bog‘lanamiz 🙌");
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>
