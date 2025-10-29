@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasteo — Biz haqimizda</title>
+    <link rel="stylesheet" href="CSS/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Tasteo<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="menu.html">Menyu</a></li>
+                <li><a href="about.html" class="active">Biz haqimizda</a></li>
+                <li><a href="contact.html">Aloqa</a></li>
+            </ul>
+        </nav>
+        <div class="menuIcon">
+            <span class="material-icons menu-icon" id="menuIcon">
+                menu
+            </span>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h1>Biz haqimizda</h1>
+                <p>
+                    <b>Tasteo</b> — bu nafaqat restoran, balki sizga unutilmas ta’m tajribasini taqdim etadigan joy.
+                    Bizning maqsadimiz — har bir mijozga shinam muhit va eng sifatli taomlarni taklif qilishdir.
+                </p>
+                <p>
+                    2018-yildan beri biz eng yaxshi oshpazlar bilan ishlaymiz. Har bir taom
+                    yangi mahsulotlardan tayyorlanadi va sizning lazzatingiz uchun yaratiladi.
+                </p>
+                <button class="btn">Menyuga o‘tish</button>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
+                    alt="Restaurant interior">
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/add.js">
+        document.querySelector(".btn").addEventListener("click", () => {
+            window.location.href = "menu.html";
+        });
+    </script>
+</body>
+
+</html>
